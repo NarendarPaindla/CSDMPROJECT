@@ -21,11 +21,6 @@ public class User {
     @Column(nullable=false)
     private Role role;
     private Long managerId;
-
-   
-    public void setManagerId(Long managerId) {
-        this.managerId = managerId;
-    }
     public User(){}
     public User(String fullName,String email,String password,Role role,Long managerId){
         this.fullName=fullName;
@@ -69,5 +64,7 @@ public class User {
     public Long getManagerId() {
         return managerId;
     }
-
+     public void setManagerId(Long managerId) {
+        this.managerId = managerId;
+    }
 }
